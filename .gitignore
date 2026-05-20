@@ -1,0 +1,23 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Maven
+target/
+
+# Gradle
+build/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Spring configs (optional)
+application.properties
+application.yml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
+
+# Token
+token.txt
