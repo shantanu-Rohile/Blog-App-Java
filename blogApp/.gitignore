@@ -1,0 +1,20 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Maven
+target/
+
+# Gradle
+build/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Spring configs (optional)
+application.properties
+application.yml
