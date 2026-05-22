@@ -31,10 +31,6 @@ public class UserDaoImpl implements UserDao {
         return "User has been deleted successfully";
     }
 
-    @Override
-    public String updateUser(String email) {
-        return "";
-    }
 
     @Override
     public User getUser(String email) {
@@ -45,5 +41,11 @@ public class UserDaoImpl implements UserDao {
     @Override
     public List<User> getAllUsers() {
         return em.createQuery("FROM User",User.class).getResultList();
+    }
+
+    @Override
+    public User gerUserById(int id) {
+        User user=em.find(User.class,id);
+        return user;
     }
 }
