@@ -5,5 +5,4 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 @Configuration
 public class SecurityConfig {
-    UserDetails John=
 }

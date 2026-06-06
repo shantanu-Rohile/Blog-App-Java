@@ -17,8 +17,8 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     @Transactional
-    public String createUser(String username, String email, String password) {
-        User user=new User(username,email,password);
+    public String createUser(String username, String email, String password, String role) {
+        User user=new User(username,email,password,role);
         em.persist(user);
         return "User created successfully";
     }

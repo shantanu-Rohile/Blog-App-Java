@@ -34,7 +34,7 @@ public class UserRest {
 
     @PostMapping("/user")
     public String createUser(@RequestBody User user){
-        return dao.createUser(user.getUsername(),user.getEmail(),user.getPassword());
+        return dao.createUser(user.getUsername(),user.getEmail(),user.getPassword(),user.getRole());
     }
 
     @GetMapping("/user/{id}")
